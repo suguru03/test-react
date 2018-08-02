@@ -1,8 +1,12 @@
 import React, { Component } from 'react';
+import Aigle from 'aigle';
 import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
+  async componentDidMount() {
+    await Aigle.delay(1000);
+  }
   render() {
     return (
       <div className="App">
